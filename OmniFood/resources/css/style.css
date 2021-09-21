@@ -85,6 +85,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    margin-bottom: 100px;
 
 }
 
@@ -146,7 +147,6 @@ header{
 
 
 h2{
-    margin-top: 80px;
     margin-bottom: 20px;
     font-size: 2em;
     font-weight: 300;
@@ -252,6 +252,12 @@ h3{
 /* HOW IT WORKS*/
 /* ----------------------------------------------- */
 
+.section-steps{
+    background-color: rgba(226, 226, 226, 0.342);
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
 .app-screen{
     width: 50%;
     margin-left: 30%;
@@ -342,3 +348,46 @@ h3{
 }
 
 
+/* ----------------------------------------------- */
+/* section-comments*/
+/* ----------------------------------------------- */
+.section-coments{
+    margin: 100px 0;
+    color: white;
+    font-style: italic;
+}
+
+.comment{
+    height: 200px;
+    display: inline-block;
+}
+
+.section-coments .slika-pizze{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(img/back-customers.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    
+    padding: 100px 0;
+}
+
+.navodnici{
+    font-size: 4em;
+}
+
+.user-info img{
+    float: left;
+    border-radius: 50%;
+    width: 25%;    
+}
+.user-info p{
+    padding: 0 15px;
+    float:right;
+    
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
