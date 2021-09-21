@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 html{
@@ -89,20 +89,20 @@ header{
 }
 
 .hero-text-box{
-    margin-left: 20px;
-    max-width: 1140px;
-    width: 100%;
+    max-width: 100%;
+    width: 1140px;
     position: absolute;
     left: 50%;
     top:35%;
     transform: translate(-50%,-50%);
+    
+    
 }
 
 .row{
     margin: 0 auto 0 auto;
     max-width: 1140px;
     position: relative;
-
 }
 
 
@@ -110,7 +110,7 @@ header{
     height: 100px;
     width: auto;
     margin-top: 20px;
-    margin-left: 20px;
+    
 
 }
 
@@ -186,13 +186,21 @@ h2::after{
 
 
 h3{
-    margin: 20px;
+
     font-size: 1em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
+
+}
+
+.section-cities h3{
+    margin: 15px 0;
+}
+.section-features h3{
     text-align: center; 
+    margin: 20px;
 }
 
 .icons{
@@ -248,7 +256,10 @@ h3{
     width: 50%;
     margin-left: 30%;
     margin-top: 15%;
+    
 }
+
+
 
 .app-content{
     width: 65%;
@@ -289,29 +300,45 @@ h3{
 
 
 /* ----------------------------------------------- */
-/* CITIES*/
+/* section-CITIES*/
 /* ----------------------------------------------- */
 
-.cities{
+.section-cities{
     width: 100%;
+    margin-bottom: 100px;
 }
-.cities img{
+.section-cities img{
     width: 100%;
     height: auto;
-    margin: 15px;
+}
+
+
+.span-1-of-4:first-child{
+    margin-left: 0 !important;
 }
 
 .data-city .icons-small{
-
     width: 10%;
     filter: invert(54%) sepia(53%) saturate(2594%) hue-rotate(355deg) brightness(101%) contrast(80%);
     display: block;
-    margin: auto;
+    margin-right: 2%;
 }
 
 .data-city img{
     float:left;
-
-
 }
+.data-city{
+    display: inline-block;
+}
+
+.data-city a{
+    color: #e67e22;
+}
+
+.data-city a:hover{
+    color: #c46a1c;
+    background-color: #c46a1c57;
+    transition: background-color 400ms;
+}
+
 
