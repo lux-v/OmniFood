@@ -46,8 +46,8 @@ h1{
 .btn-full{
     background-color: #e67e22;
     border: 1px #e67e22;
-    margin-right: 20px;
     color: white;
+    margin-right: 20px;
     margin-bottom: 15px;
 }
 
@@ -59,7 +59,24 @@ h1{
 .btn-ghost{
     border: 1px solid #c46a1c;
     color:white;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
+.including .btn-ghost{
+    color:#c46a1c;
+}
+.including .btn-ghost:hover{
+    color:white;
+    transition: 400ms;
+    
+}
+.including .btn-ghost:active{
+    background-color: white;
+    color: #c46a1c;
+    transition: 400ms;
+}
+
+
 .btn-ghost:hover{
     background-color: #c46a1c;
     transition: background-color 400ms;
@@ -253,9 +270,9 @@ h3{
 /* ----------------------------------------------- */
 
 .section-steps{
-    background-color: rgba(226, 226, 226, 0.342);
+    background-color: rgba(226, 226, 226, 0.58);
     padding-top: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .app-screen{
@@ -264,8 +281,6 @@ h3{
     margin-top: 15%;
     
 }
-
-
 
 .app-content{
     width: 65%;
@@ -312,6 +327,7 @@ h3{
 .section-cities{
     width: 100%;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 .section-cities img{
     width: 100%;
@@ -326,7 +342,6 @@ h3{
 .data-city .icons-small{
     width: 10%;
     filter: invert(54%) sepia(53%) saturate(2594%) hue-rotate(355deg) brightness(101%) contrast(80%);
-    display: block;
     margin-right: 2%;
 }
 
@@ -352,7 +367,7 @@ h3{
 /* section-comments*/
 /* ----------------------------------------------- */
 .section-coments{
-    margin: 100px 0;
+    margin-top: 100px;
     color: white;
     font-style: italic;
 }
@@ -360,6 +375,8 @@ h3{
 .comment{
     height: 200px;
     display: inline-block;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 .section-coments .slika-pizze{
@@ -390,4 +407,75 @@ h3{
 .user-info{
     display: flex;
     align-items: center;
+}
+
+.ime-komentatora{
+    font-size: 18px;
+}
+
+
+/* ----------------------------------------------- */
+/* section-offer */
+/* ----------------------------------------------- */
+
+
+.section-offer{
+    background-color: rgba(226, 226, 226, 0.58);
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.section-offer .including, .price{
+    background-color: white;
+    padding: 20px;
+}
+
+.including a{
+    margin-top: 30px;
+}
+
+.including div{
+    display: inline-block;
+    margin: 5px 5px;
+}
+.including img{
+    float:left;
+}
+.section-offer h3{
+    margin: 15px 0;
+}
+
+.pricing{
+    color: #c46a1c;
+    font-size: 60px;
+    margin: 15px 0;
+    font-weight: 100;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+
+}
+.pricing span{
+    font-size: 20px;
+}
+
+.price-sumup{
+    font-size: 16px;
+}
+
+.icons-mini{
+    width: 5.5%;
+    filter: invert(54%) sepia(53%) saturate(2594%) hue-rotate(355deg) brightness(101%) contrast(80%);
+    display: block;
+    margin: 0 10px;
+}
+
+.including a{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 12px 0;
+    text-align: center;
 }
