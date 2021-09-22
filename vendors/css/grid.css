@@ -86,7 +86,7 @@
 
 @media only screen and (max-width: 485px) {
 	.span-3-of-3 {
-		width: 100%; 
+		width: 100% ; 
 	}
 	.span-2-of-3 {
 		width: 100%; 
@@ -94,7 +94,12 @@
 	.span-1-of-3 {
 		width: 100%;
 	}
+
+	.wrapper{
+		display: block;
+	}
 }
+
 
 /*  GRID OF FOUR   ============================================================================= */
 

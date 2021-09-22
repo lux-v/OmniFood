@@ -62,10 +62,11 @@ h1{
     margin-right: 20px;
     margin-bottom: 15px;
 }
-.including .btn-ghost{
+
+.cijene .btn-ghost{
     color:#c46a1c;
 }
-.including .btn-ghost:hover{
+.cijene .btn-ghost:hover{
     color:white;
     transition: 400ms;
     
@@ -113,6 +114,7 @@ header{
     left: 50%;
     top:35%;
     transform: translate(-50%,-50%);
+    margin-left: 20px;
     
     
 }
@@ -121,6 +123,7 @@ header{
     margin: 0 auto 0 auto;
     max-width: 1140px;
     position: relative;
+    padding-left: 15px;
 }
 
 
@@ -128,7 +131,7 @@ header{
     height: 100px;
     width: auto;
     margin-top: 20px;
-    
+    margin-left: 20px;
 
 }
 
@@ -421,19 +424,38 @@ h3{
 
 .section-offer{
     background-color: rgba(226, 226, 226, 0.58);
-    
     padding-top: 100px;
     padding-bottom: 100px;
-
 }
+
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
 
 .section-offer .including, .price{
-    background-color: white;
+    
     padding: 20px;
+    
 }
 
-.including a{
-    margin-top: 30px;
+.cijene{
+    background-color: white;
+}
+
+
+.cijene a{
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    bottom: 0;
+}
+
+.including{
+    margin-bottom: 100px;
 }
 
 .including div{
@@ -543,4 +565,70 @@ h3{
     float:right;
     width: 85%;
     margin-left: 0;
+}
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER*/
+/* ----------------------------------------------- */
+
+footer{
+    padding: 50px 0;
+    background-color: #333;
+    color: rgb(163, 163, 163);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.lijeva-footer .p-footer{
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.p-footer a{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.p-footer a:hover{
+    color: white;
+    transition: 400ms;
+}
+
+.lijeva-footer{
+    width: 50%;
+    float:left;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.desno-footer{
+    float:right;
+    width: 50%;
+    text-align: right;
+    
+}
+
+.desno-footer img{
+    
+    align-items: right;
+    display: inline-block;
+    margin: 20px;
+}
+
+.copyright{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.desno-footer .icons-mini{
+   /* filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(12deg) brightness(89%) contrast(90%);*/
 }
