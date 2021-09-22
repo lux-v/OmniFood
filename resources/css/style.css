@@ -479,3 +479,68 @@ h3{
     padding: 12px 0;
     text-align: center;
 }
+
+/* ----------------------------------------------- */
+/* section-message*/
+/* ----------------------------------------------- */
+
+
+.section-messages{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.message-info input, select{
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 10px !important;  
+      
+}
+.message-info{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.message-info .poruka{
+    height: 100px;
+}
+
+.redak p{
+    width: 100%;
+    height: 40px;
+    display:flex;
+    align-items: left;
+}
+
+.redak{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.lijevo {
+    display: inline-block;
+    
+    width: 10%;
+    margin-left: 0;
+    margin-right: 5%;
+    margin-top: 1%;
+    
+}
+.lijevo input{
+    width: 20px;
+    height: 20px;
+}
+
+
+.desno{
+    float:right;
+    width: 85%;
+    margin-left: 0;
+}
