@@ -1,24 +1,25 @@
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
-function doSomething(scrollPos,v1) {
+function loadScrollgBar(scrollPos,v1) {
     progress.style.width=scrollPos/v1*100+"%"
 }
 
-var height1 =document.documentElement.scrollHeight
-
+var element = document.documentElement;
+let height = 0;
 
 document.addEventListener('scroll', function(e) {
     
   lastKnownScrollPosition = window.scrollY;
-  
+  height= element.offsetHeight - element.clientHeight;
 
   if (!ticking) {
     window.requestAnimationFrame(function() {
-      doSomething(lastKnownScrollPosition,height1);
+      loadScrollgBar(lastKnownScrollPosition, height);
       ticking = false;
     });
 
     ticking = true;
   }
 })
+
