@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
+    
 }
 
 html{
@@ -15,7 +16,16 @@ html{
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+
 }
+
+::-webkit-scrollbar{
+    display:none;/* Safari, opera, Chrome */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+
 
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS*/
@@ -114,16 +124,14 @@ header{
     left: 50%;
     top:35%;
     transform: translate(-50%,-50%);
-    margin-left: 20px;
-    
-    
+    padding-left: 20px;
 }
 
 .row{
     margin: 0 auto 0 auto;
     max-width: 1140px;
     position: relative;
-    padding-left: 15px;
+    
 }
 
 
@@ -151,7 +159,7 @@ header{
 .main-nav li a:visited {
     text-decoration: none;
     color: white;
-    font-size: 90%;
+    font-size: 100%;
     padding-bottom: 8px;
     padding-top: 8px;
 
@@ -629,6 +637,18 @@ footer{
 }
 
 
-.desno-footer .icons-mini{
-   /* filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(12deg) brightness(89%) contrast(90%);*/
+.desno-footer .icons-mini:hover{
+    filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(12deg) brightness(89%) contrast(90%);
+    transition: filter 500ms;
+}
+
+
+.progress{
+    height: 4px;
+    width: 100%;
+    background-color: #e67e22;
+
+    position:fixed;
+    bottom:0;
+    z-index: 999;
 }
