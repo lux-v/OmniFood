@@ -58,7 +58,6 @@ h1{
     border: 1px #e67e22;
     color: white;
     margin-right: 20px;
-    margin-bottom: 15px;
 }
 
 .btn-full:hover{
@@ -70,7 +69,6 @@ h1{
     border: 1px solid #c46a1c;
     color:white;
     margin-right: 20px;
-    margin-bottom: 15px;
 }
 
 .cijene .btn-ghost{
@@ -209,7 +207,7 @@ h2::after{
 .section-features .row p{
     text-align: justify;
     line-height: 140%;
-    margin: 20px;
+    padding: 10px;
 }
 
 
@@ -313,16 +311,21 @@ h3{
     height: auto;
 
     max-width: 300px;
+    min-width: 100px;
 }
 
 .app-content{
-    width: 50%;
+    width: 100%;
 }
 
 .work-steps{
     margin-bottom: 50px;
-    width: 100%;
+    width: 80%;
+    text-align: justify;
 }
+
+
+
 
 .app-content .work-steps div{
     color: #e67e22;
@@ -346,8 +349,8 @@ h3{
 }
 
 .btn-app img{
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 150px;
     margin-right: 10px;
 }
 
@@ -368,7 +371,7 @@ h3{
 }
 
 .section-cities .col{
-    background-color: rgba(240, 240, 240, 0.58);
+    background-color: rgba(226, 226, 226, 0.58);
     border-radius: 10px;
 }
 .section-cities h3{
@@ -423,10 +426,11 @@ h3{
 }
 
 .comment{
-    height: 200px;
+    height: 220px;
     display: inline-block;
     letter-spacing: 1px;
     word-spacing: 4px;
+    margin:0;
 }
 
 .section-coments .slika-pizze{
@@ -478,24 +482,22 @@ h3{
 
 .section-offer .including, .price{
     
-    padding: 20px;
+    padding: 5px;
     
 }
 
 .cijene{
     background-color: white;
+    min-height: 520px;
 }
 
 
 .cijene a{
-    position: absolute;
     margin-left: 20px;
-    margin-bottom: 50px;
-    bottom: 0;
 }
 
 .including{
-    margin-bottom: 100px;
+    min-height: 220px;
 }
 
 .including div{
@@ -512,10 +514,11 @@ h3{
 .pricing{
     color: #c46a1c;
     font-size: 60px;
-    margin: 15px 0;
+    margin: 5px 0;
     font-weight: 100;
     word-spacing: 10px;
     letter-spacing: 1px;
+    min-height: 140px;
 
 }
 .pricing span{
