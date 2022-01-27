@@ -20,7 +20,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/icons/logo-facebook.svg">
         <link rel="stylesheet" type="text/css" href="vendors/icons/logo-google.svg">
         <link rel="stylesheet" type="text/css" href="vendors/icons/logo-instagram.svg">
-
+        <link rel="stylesheet" type="text/css" href="vendors/icons/hamburger.svg">
         
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,16 +32,15 @@
     </head>
 
     <body>
-        
-            <div class="progress" id="progress"></div>
-        
-      
+        <div class="progress" id="progress"></div>
         <header>
             <nav>
-                <div class="row">
+                <div class="row navigation">
                     <img class="logo" src="resources/css/img/logo-white.png" alt="LogoOmniFood" style="float:left">
 
-                    <ul class="main-nav" style="float:right">
+                    <img class="icons-small hamburger" id="hamburger" style="float:right" src="vendors/icons/hamburger.svg" alt="hamburger">
+
+                    <ul class="main-nav" id="navUL" style="float:right">
                         <li>
                             <a href="#">FOOD DELIVERY</a>
                         </li>
@@ -56,8 +55,9 @@
                         </li>
                     </ul>
                 </div>
+                
             </nav>
-            <div class="hero-text-box">
+            <div class="hero-text-box" id="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
                 <a class="btn btn-full" href="#">I’m hungry</a>
                 <a class="btn btn-ghost" href="#">Show me more</a>
@@ -120,16 +120,16 @@
         </section>
 
         <section class="fav-meal">
-            <ul>
-              <li>
-                  <figure>
-                      <img src="resources/css/img/1.jpg" alt="1">
-                  </figure>
-              </li>
-              <li>
+           
+            <li>
                 <figure>
-                    <img src="resources/css/img/2.jpg" alt="2">
+                    <img src="resources/css/img/1.jpg" alt="1">
                 </figure>
+            </li>
+            <li>
+            <figure>
+                <img src="resources/css/img/2.jpg" alt="2">
+            </figure>
             </li>
             <li>
                 <figure>
@@ -141,29 +141,35 @@
                     <img src="resources/css/img/4.jpg" alt="4">
                 </figure>
             </li>
-            </ul>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="resources/css/img/5.jpg" alt="5">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="resources/css/img/6.jpg" alt="6">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="resources/css/img/7.jpg" alt="7">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="resources/css/img/8.jpg" alt="8">
-                    </figure>
-                </li>
-            </ul>
+        
+        
+            <li>
+                <figure>
+                    <img src="resources/css/img/5.jpg" alt="5">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="resources/css/img/6.jpg" alt="6">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="resources/css/img/7.jpg" alt="7">
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="resources/css/img/8.jpg" alt="8">
+                </figure>
+            </li>
+
+            <li class="devetaSlika">
+                <figure>
+                    <img src="resources/css/img/9.jpg" alt="9">
+                </figure>
+            </li>
+            
         </section>
 
         <section class="section-steps"> 

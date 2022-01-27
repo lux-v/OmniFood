@@ -37,8 +37,9 @@ h1{
     margin-top: 0;
     margin-bottom: 20px;
     color: white;
-    font-size: 2.4em;
-    font-weight: 300;
+    font-size: calc(1.9em + 1vw);
+    
+    font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
@@ -115,6 +116,28 @@ header{
 
 }
 
+header .navigation{
+    max-width: 100%;
+}
+
+.hamburger{
+    width: 50px;
+    filter: invert(54%) sepia(53%) saturate(2594%) hue-rotate(355deg) brightness(101%) contrast(80%);
+    margin: 40px 20px;
+    display: none;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+
+
+
 .hero-text-box{
     max-width: 100%;
     width: 1140px;
@@ -123,15 +146,31 @@ header{
     top:35%;
     transform: translate(-50%,-50%);
     padding-left: 20px;
+
+    transition: 200ms;
 }
 
 .row{
     margin: 0 auto 0 auto;
     width: 100%;
+    max-width: 1440px;
     position: relative;
     padding: 0 20px;
     
 }
+
+.row p{
+    margin: 20px;
+}
+
+.section-offer p{
+    margin: 0;
+}
+
+.section-messages p{
+    margin: 0;
+}
+
 
 
 .logo{
@@ -148,17 +187,23 @@ header{
     margin-left: 40px;
 }
 
+
+
 .main-nav li{
     display: inline;
-    margin-right: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+    
 }
+.main-nav li:first-child{ margin-top: 20px;}
 
 
 .main-nav li a:link,
 .main-nav li a:visited {
     text-decoration: none;
     color: white;
-    font-size: 100%;
+    font-size: calc(20px + 0.4vw);
     padding-bottom: 8px;
     padding-top: 8px;
 
@@ -175,7 +220,8 @@ header{
 
 h2{
     margin-bottom: 20px;
-    font-size: 2em;
+    /*font-size: 2em;*/
+    font-size: calc(1.5em + 1vw);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -239,18 +285,17 @@ h3{
 
 .fav-meal{
     padding:0;
-    display: inline-block;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
-.fav-meal ul{
-    width: 100%;
-    list-style: none;
+.devetaSlika{
+    display: none;
 }
 
-.fav-meal ul li{
-    display: block;
-    float: left;
-    width: 25%;
+.fav-meal li{
+    list-style-type: none;
 }
 
 .fav-meal figure{
@@ -261,6 +306,7 @@ h3{
 }
 
 .fav-meal figure img{
+
     width: 100%;
     height: auto;
     transform: scale(1.15);
@@ -481,14 +527,20 @@ h3{
 
 
 .section-offer .including, .price{
-    
     padding: 5px;
-    
+}
+.section-offer .price{
+    text-align: center;
+
 }
 
 .cijene{
     background-color: white;
     min-height: 520px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
@@ -513,7 +565,8 @@ h3{
 
 .pricing{
     color: #c46a1c;
-    font-size: 60px;
+    
+    font-size: calc(40px + 1.5vw);
     margin: 5px 0;
     font-weight: 100;
     word-spacing: 10px;
@@ -531,6 +584,7 @@ h3{
 
 .icons-mini{
     width: 5.5%;
+    min-width: 22px;
     filter: invert(54%) sepia(53%) saturate(2594%) hue-rotate(355deg) brightness(101%) contrast(80%);
     display: block;
     margin: 0 10px;
@@ -663,7 +717,6 @@ footer{
     
     align-items: right;
     display: inline-block;
-    margin: 20px;
 }
 
 .copyright{
