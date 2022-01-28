@@ -1,6 +1,4 @@
-
 /*  SECTIONS  ============================================================================= */
-
 .section {
 	clear: both;
 	padding: 0px;
@@ -8,11 +6,9 @@
 }
 
 /*  GROUPING  ============================================================================= */
-
 .row {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
-
 .row:before,
 .row:after {
     content:"";
@@ -23,407 +19,47 @@
 }
 
 /*  GRID COLUMN SETUP   ==================================================================== */
-
 .col {
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
 }
-
 .col:first-child { margin-left: 0} /* all browsers except IE6 and lower */
 
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		/*margin: 1% 0 1% 0%;*/
-        margin: 0 0 10px 0;
-	}
-}
-
-
 /*  GRID OF TWO   ============================================================================= */
-
-
 .span-2-of-2 {
 	width: 100%;
 }
-
 .span-1-of-2 {
 	width: 49.2%;
 }
 
 /*  GRID OF THREE   ============================================================================= */
-
-	
 .span-3-of-3 {
 	width: 100%; 
 }
-
 .span-2-of-3 {
 	width: 66.13%; 
 }
-
 .span-1-of-3 {
 	width: 32.26%; 
 }
 
-
 /*  GRID OF FOUR   ============================================================================= */
-
-	
 .span-4-of-4 {
 	width: 100%; 
 }
-
 .span-3-of-4 {
 	width: 74.6%; 
 }
-
 .span-2-of-4 {
 	width: 49.2%; 
 }
-
 .span-1-of-4 {
 	width: 23.8%; 
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
-	.span-2-of-2 {
-		width: 100%; 
-	}
-	.span-1-of-2 {
-		width: 100%; 
-	}
 
-	.span-3-of-3 {
-		width: 100%; 
-	}
-	.span-2-of-3 {
-		width: 100%; 
-	}
-	.span-1-of-3 {
-		width: 100%;
-	}
-
-	.span-4-of-4 {
-		width: 100%; 
-	}
-	.span-3-of-4 {
-		width: 100%; 
-	}
-	.span-2-of-4 {
-		width: 100%; 
-	}
-	.span-1-of-4 {
-		width: 100%; 
-	}
-
-	.main-nav{
-		display: none;
-	}	
-
-	.main-nav.show{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 0;
-		width: 100%;
-		height: 100%;
-		
-
-	}
-
-	.hero-text-box.show{
-		top:60%;
-	}
-	
-	.hamburger{
-		display: block;
-	}
-
-
-	/*  SECTION-STEPS   ============================================================================= */
-	.centriranjeRow{
-		flex-direction: column;
-	}
-
-	.app-screen img{
-		width: 50%;
-	}
-
-
-	/*  FAV-MEAL   ============================================================================= */
-	.fav-meal{
-		grid-template-columns: 100%;
-		grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.devetaSlika{
-		display: none;
-	}
-
-}
-
-@media only screen and (max-width: 768px) and (min-width: 481px){
-
-	.span-2-of-2 {
-		width: 100%; 
-	}
-	.span-1-of-2 {
-		width: 100%; 
-	}
-
-	.span-3-of-3 {
-		width: 100%; 
-	}
-	.span-2-of-3 {
-		width: 100%; 
-	}
-	.span-1-of-3 {
-		width: 100%; 
-	}
-
-	.span-4-of-4 {
-		width: 100%; 
-	}
-	.span-3-of-4 {
-		width: 100%; 
-	}
-	.span-2-of-4 {
-		width: 100%; 
-	}
-	.span-1-of-4 {
-		width: 100%; 
-	}
-
-
-	.row{
-		max-width: 620px;
-	}
-
-	.main-nav{
-		display: none;
-	}	
-
-	.main-nav.show{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 0;
-		width: 100%;
-		height: 100%;
-
-		left:500px;
-
-	}
-
-	.hero-text-box.show{
-		top: 55%;
-	} 
-	
-	.hamburger{
-		display: block;
-	}
-
-/*  SECTION-FEATURES   ============================================================================= */
-
-	.icons{
-		width: 70px;
-	}
-
-
-	.section-features .row{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.section-features .col{
-		width: 80%;
-		margin-bottom: 20px;
-	}
-/*  SECTION-STEPS   ============================================================================= */
-	.section-steps .centriranjeRow{
-		flex-direction: column;
-	}
-
-	.centriranjeColumn{
-		align-items: center;
-	}
-
-	.work-steps{
-		width: 80%;
-		text-align: justify;
-	}
-	.work-steps:first-child{margin-top: 30px}
-
-	.app-screen img{
-		width: 35%;
-	}
-/*  SECTION-STEPS   ============================================================================= */
-
-	.section-cities .col{
-		display: flex;
-		justify-content: center;
-		margin: 0 0 20px 0;
-	}
-
-	.centriranjeCities{
-		width: 70%;
-	}
-
-
-
-/*  SECTION-COMMENTS   ============================================================================= */
-
-	.komentari-stupac{
-		width: 70%;
-	}
-	
-	.comment{
-		margin: 0 0 20px 0;
-		width: auto;
-		height: auto;
-	}
-
-	.user-info img{
-		width: 70px;
-	}
-
-
-/*  SECTION-OFFER   ============================================================================= */
-
-	.section-offer .row{
-		width: 80%;
-	}
-
-	.section-offer .col{margin:0 0 10px 0};
-
-
-
-	
-
-
-/*  footer   ============================================================================= */
-	.icons-mini{
-		margin: 0 5px;
-	}
-
-
-/*  FAV-MEAL   ============================================================================= */
-	.fav-meal{
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 25% 25% 25% 25%;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.devetaSlika{
-		display: none;
-	}
-
-
-}
-
-
- @media only screen and (max-width: 1024px) and (min-width: 769px){
-	.span-4-of-4 {
-		width: 100%; 
-	}
-	.span-3-of-4 {
-		width: 100%; 
-	}
-	.span-2-of-4 {
-		width: 100%; 
-	}
-	.span-1-of-4 {
-		width: 49.2%; 
-	}
-
-
-	.main-nav{
-		display: none;
-	}	
-
-	.main-nav.show{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.hero-text-box.show{
-		top:50%;
-	}
-	
-	.hamburger{
-		display: block;
-	}
-
-
-
-	.section-cities .col:nth-child(3) { margin-left: 0}
-	.section-features .col:nth-child(3) { margin-left: 0}
-	
-	.app-screen img{
-		width: 50%;
-	}
-
-	.icons{
-		width: 60px;
-	}
-
-	.btn-app img{
-		height: 40px;
-	}
-	
-
-	/*  FAV-MEAL   ============================================================================= */
-
-	.fav-meal{
-		grid-template-columns: 33.3% 33.3% 33.3%;
-		grid-template-rows: 33.3% 33.3% 33.3%;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.devetaSlika{
-		display: block;
-	}
-	
-	
- }
-
- @media only screen and (max-width: 1200px) and (min-width: 1025px){
-
-	.work-steps{
-		width: 80%;
-		text-align: justify;
-	}
-	.work-steps:first-child{margin-top: 30px}
-
-	.app-screen img{
-		width: 40%;
-	}
-
- }
-
-
- @media only screen and (max-width: 1920px) and (min-width: 1201px){
-
- }
-
-
-
- @media only screen and (min-width: 1921px) and (max-width: 2300px){
-
- }
 
 
