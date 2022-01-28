@@ -38,7 +38,6 @@ h1{
     margin-bottom: 20px;
     color: white;
     font-size: calc(1.9em + 1vw);
-    
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -49,6 +48,7 @@ h1{
 .btn{
      display: inline-block;
      padding: 10px 30px;
+     margin-top: 5px;
      font-weight: 300;
      text-decoration: none;
      border-radius: 200px;
@@ -177,7 +177,6 @@ header .navigation{
     height: 100px;
     width: auto;
     margin-top: 20px;
-    margin-left: 20px;
 
 }
 
@@ -340,6 +339,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .centriranjeKoraci{
@@ -711,6 +711,10 @@ footer{
     width: 50%;
     text-align: right;
     
+}
+
+.desno-footer a{
+    color: transparent;
 }
 
 .desno-footer img{
